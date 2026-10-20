@@ -11,14 +11,7 @@ TubeTune is a lightweight browser extension for controlling YouTube playback spe
 - Remembers the preferred playback speed locally using browser extension storage
 - Built for Chromium-based browsers such as Google Chrome and Brave
 
-## Install in Brave or Chrome
 
-1. Download this repository using **Code → Download ZIP**, then extract the ZIP.
-2. Open `brave://extensions` in Brave or `chrome://extensions` in Chrome.
-3. Turn on **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the extracted `TubeTune` folder (the folder containing `manifest.json`).
-6. Open YouTube and refresh the page if it was already open.
 
 ## How to use
 
