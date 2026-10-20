@@ -1,0 +1,22 @@
+/* Compact speed control styled to blend into YouTube's native player bar. */
+#tubetune-player-speed.ytp-button {
+  width: 44px !important;
+  min-width: 44px !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: -.3px;
+  opacity: .9;
+  text-align: center;
+}
+#tubetune-player-speed.ytp-button:hover {
+  opacity: 1;
+  background: #ffffff16;
+}
+#tubetune-player-speed.tubetune-fast {
+  color: #ff7777 !important;
+}
+#tubetune-player-speed:focus-visible {
+  outline: 2px solid #fff !important;
+  outline-offset: -3px;
+}

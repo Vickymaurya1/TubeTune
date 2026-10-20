@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+:root {
+  color-scheme: dark;
+  --bg: #111214;
+  --panel: #191a1e;
+  --panel-2: #222329;
+  --text: #f5f5f6;
+  --muted: #a2a4ad;
+  --red: #ff4545;
+  --border: #303138;
+}
+body {
+  margin: 0; width: 340px; min-height: 390px;
+  background: var(--bg); color: var(--text);
+  font: 14px/1.45 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.app { padding: 18px; }
+.header { display:flex; align-items:center; gap:11px; padding-bottom:17px; border-bottom:1px solid var(--border); }
+.logo { display:grid; place-items:center; width:40px; height:40px; border-radius:12px; background:var(--red); color:white; font-size:18px; box-shadow:0 5px 18px #ff45452b; }
+h1 { margin:0; font-size:17px; letter-spacing:-.3px; }
+.header p { margin:2px 0 0; color:var(--muted); font-size:11px; }
+.status-dot { width:8px; height:8px; border-radius:50%; background:#39d98a; margin-left:auto; box-shadow:0 0 0 4px #39d98a18; }
+.hero { margin-top:17px; padding:16px; border:1px solid var(--border); border-radius:16px; background:linear-gradient(145deg,#1b1c20,#151619); }
+.eyebrow { color:var(--muted); font-size:10px; font-weight:800; letter-spacing:1.3px; }
+.current-speed { display:flex; align-items:baseline; gap:8px; margin:7px 0 15px; }
+.current-speed #currentSpeed { font-size:33px; font-weight:800; letter-spacing:-1.4px; }
+.speed-label { color:var(--muted); font-size:11px; }
+.speed-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+.speed-option { border:1px solid #35363d; border-radius:10px; padding:11px 5px; color:#e9e9ec; background:var(--panel-2); font-size:13px; font-weight:700; cursor:pointer; transition:background .15s,border-color .15s,transform .15s; }
+.speed-option:hover { border-color:#777982; transform:translateY(-1px); }
+.speed-option.active { background:var(--red); color:white; border-color:var(--red); box-shadow:0 4px 14px #ff454525; }
+.hint { margin:12px 0 0; min-height:30px; color:var(--muted); font-size:11px; }
+.shortcut-card { display:flex; align-items:center; gap:10px; margin-top:12px; padding:12px; background:var(--panel); border:1px solid var(--border); border-radius:13px; }
+.shortcut-icon { display:grid; place-items:center; width:34px; height:34px; border-radius:9px; background:#292a30; font-size:18px; }
+.shortcut-copy { display:flex; flex-direction:column; gap:3px; min-width:0; }
+.shortcut-copy strong { font-size:12px; }
+.shortcut-copy span { color:var(--muted); font-size:10px; white-space:nowrap; }
+kbd { padding:2px 5px; border:1px solid #41424a; border-radius:4px; background:#28292f; color:#eee; font:10px ui-monospace,monospace; }
+.shortcut-badge { margin-left:auto; padding:5px 7px; border-radius:7px; background:#ff45451b; color:#ff7777; font-size:11px; font-weight:800; }
+footer { display:flex; align-items:center; gap:7px; margin:15px 2px 0; color:var(--muted); font-size:10px; }
+.footer-dot { width:6px; height:6px; border-radius:50%; background:#39d98a; }
+button:focus-visible { outline:2px solid #ff8888; outline-offset:2px; }

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TubeTune</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">▶</div>
+      <div>
+        <h1>TubeTune</h1>
+        <p>YouTube Speed Controller</p>
+      </div>
+      <span class="status-dot" title="Ready"></span>
+    </header>
+
+    <section class="hero">
+      <span class="eyebrow">PLAYBACK SPEED</span>
+      <div class="current-speed"><span id="currentSpeed">1×</span><span class="speed-label">selected</span></div>
+      <div class="speed-grid" id="speedGrid">
+        <button class="speed-option" data-speed="1">1×</button>
+        <button class="speed-option" data-speed="1.25">1.25×</button>
+        <button class="speed-option" data-speed="1.5">1.5×</button>
+        <button class="speed-option" data-speed="2">2×</button>
+        <button class="speed-option" data-speed="2.5">2.5×</button>
+        <button class="speed-option" data-speed="3">3×</button>
+      </div>
+      <p class="hint" id="status">Choose a speed to apply it to the current YouTube video.</p>
+    </section>
+
+    <section class="shortcut-card">
+      <div class="shortcut-icon">⌨</div>
+      <div class="shortcut-copy">
+        <strong>Quick shortcut</strong>
+        <span>Press <kbd>Shift</kbd> + <kbd>3</kbd> on YouTube for 3×</span>
+      </div>
+      <span class="shortcut-badge">3×</span>
+    </section>
+
+    <footer>
+      <span class="footer-dot"></span>
+      Works on YouTube video pages
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
